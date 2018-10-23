@@ -104,19 +104,22 @@ Let's use componentDidMount() to fetch real users from a server in our Contacts 
 this.setState((state, props) => {
   return {counter: state.counter + props.step};
 });
-```javascript
-A callback function can also be invoked during `setState()`
 ```
+A callback function can also be invoked during `setState()`
+
+```javascript
 setState(stateChange[, callback])
 ```
 ## [Functional and Class Component](https://reactjs.org/docs/components-and-props.html#function-and-class-components)
 > The simplest way to define a component is to write a JavaScript function:
+
 ```javascript
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 ```
 >We can also use an ES6 class to define a component:
+
 ```javascript
 class Welcome extends React.Component {
   render() {
@@ -128,6 +131,7 @@ class Welcome extends React.Component {
 # [Instance_Properties](https://reactjs.org/docs/react-component.html#instance-properties-1)
 ### [props](https://reactjs.org/docs/react-component.html#props)
 > `this.props` is defined by the caller of this component
+
 ```javascript
 function Comment(props) {
   return (
@@ -148,6 +152,7 @@ function Comment(props) {
 
 ## [Controlled Components](https://reactjs.org/docs/forms.html#controlled-components)
 >From elements such as `<input>, <textarea>, and <select>` maintain their own state. We can combine the two by making the React state be the “single source of truth”. Then the React component that renders a form also controls what happens in that form on subsequent user input. An input form element whose value is controlled by React in this way is called a “controlled component”.
+
 ```javascript
 class NameForm extends React.Component {
   constructor(props) {
